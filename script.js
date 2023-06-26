@@ -149,7 +149,7 @@ function validate() {
 
 
 
-  // to edit the data
+  // To Edit the data
   var edtBtn = document.querySelectorAll('#edit_employe');
   var updBtn = document.querySelector('#update_button');
 
@@ -193,6 +193,7 @@ function validate() {
   }
 
 }
+//Replace The Content after, Updatation in the Object
 function changeValueInArray(refid) {
   var i;
   for (i = 0; i < DataEmployeArray.length - 1; i++) {
@@ -208,7 +209,7 @@ function changeValueInArray(refid) {
 
 }
 
-
+//Verify the updated data 
 function CheckUpdatedData(sameID) {
   let isvalid = true
 
