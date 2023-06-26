@@ -1,0 +1,197 @@
+
+body{
+  font-family: 'roboto';
+}
+.body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  
+}
+
+h1 {
+  
+  text-align: center;
+  color: #333;
+  
+}
+
+.form {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgb(5, 7, 116);
+}
+
+
+
+.label {
+  color: #fffcfc;
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.input {
+
+  color: #151618;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border: 2px solid #0a0a0a;
+  border-radius: 12px;
+}
+#employe_gender{
+  border: 2px solid black;
+}
+
+
+.error_message {
+  color: rgb(209, 41, 41);
+  font-size: 14px;
+  
+}
+#id_error{
+  margin-left: 140px;
+}
+#name_error{
+  margin-left: 170px;
+}
+#age_error{
+  margin-left: 80px;
+}
+#gender_error{
+  margin-left: 70px;
+}
+#employe_gender{
+  background-color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #130f0f;
+  
+}
+
+
+.update_employe div{
+  
+  color: #eb0f0f;
+  margin-left: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  
+  
+}
+
+.add {
+  background-color: #0d92eb;
+  color: rgb(233, 221, 221);
+  font-size: 15px;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px 10px;
+  
+}
+.add:hover{
+  background-color: #1276e2;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+table th,
+table td {
+  padding: 14px;
+  border: 1px solid #ccc;
+}
+
+
+.update_employe {
+  display: none;
+  
+}
+
+.update_form {
+  
+  position: fixed;
+  bottom: 50px;
+  right: 450px;
+  width: 40%;
+  height: 90%;
+  background-color: rgb(6, 20, 100);
+  border-radius: 4px;
+  
+
+}
+img{
+  width: 40%;
+}
+
+.update_form label,
+.update_form input,
+.update_form select {
+  display: block;
+  margin-top: 20px;
+  
+}
+.update_form input{
+  width: 50%;
+  text-align: left;
+}
+
+#e_gender{
+  width: 50%;
+}
+table button{
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+}
+
+table thead{
+  background-color: rgb(6, 20, 100);
+  color: #f2f2f2;
+  
+}
+
+#update_button {
+  background-color: #1276e2;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  margin-left: 40px;
+  margin-top: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#update_button:hover{
+  background-color: #40668f;
+
+}
+#close_button{
+  background-color: #df2626;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  margin-left: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#close_button:hover{
+  background-color: #9e2424;
+}
+
+button{
+  cursor: pointer;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employe Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+
+</head>
+
+<body id="body">
+    
+    <H1>Employe Portal</H1>
+
+    <form class="form" onsubmit="return validate()">
+        <div>
+            <label class="label" for="employe_id">Employe id:- </label>
+            <input class="input" type="text" id="emp_id" name="employe_id" >
+            <div class="error_message" id="id_error"></div>
+        </div>
+
+        <div>
+            <label class="label" for="employe_name">Employe_name:- </label>
+            <input class="input" type="text" id="employe_name" name="employe_name">
+            <div class="error_message" id="name_error"></div>        
+        </div>
+
+
+        <div>
+            <label class="label" for="employe_age">Age:- </label>
+            <input class="input" type="text" id="employe_age" name="employe_age" inputmode="numeric" value="0">
+            <div class="error_message" id="age_error"></div>
+        </div>
+
+        <div>
+            <label class="label" for="employe_gender">Gender:- </label>
+            <select class="input" name="gender" id="employe_gender">
+                <option value="">Select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </select>
+            <div class="error_message" id="gender_error"></div>
+        </div>
+        <button class="add" type="submit">ADD</button>
+
+    </form>
+    <table id="datatable">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Gender</td>
+                <td>Update/Delete</td>
+            </tr>
+        </thead>
+
+    </table>
+    <div class="update_employe" id="update_form">
+        <form class="update_form">
+            <label class="label" for="employe_id">Employe id:- </label>
+            <input class="input"  type="text" id="e_id" name="employe_id" >
+            <div class="error_message" id="upid_error"></div>
+    
+            <label class="label" for="employe_name">Employe_name:- </label>
+            <input class="input" type="text" id="e_name" name="employe_name" required>
+            <div id="upname_error"></div>        
+        
+            <label class="label" for="employe_age">Age:- </label>
+            <input class="input" type="text" id="e_age" name="employe_age" inputmode="numeric" value="0">
+            <div id="upage_error"></div>
+        
+            <label class="label" for="employe_gender">Gender:- </label>
+            <select class="input" name="gender" id="e_gender">
+                <option value="">Select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </select>
+            <div id="upgender_error"></div>
+        
+        <button id="update_button">Update</button>
+        <button id="close_button" onclick="return CancelPage()">Close</button>
+            
+        </form>
+    </div>
+    
+
+
+</body>
+
+</html>
