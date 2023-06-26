@@ -137,6 +137,7 @@ function validate() {
 
 
 
+  
   // to delete the data
   var i;
   var delBtn = document.querySelectorAll('#delete_employe');
@@ -146,8 +147,6 @@ function validate() {
       tr.remove();
     }
   }
-
-
 
   // To Edit the data
   var edtBtn = document.querySelectorAll('#edit_employe');
@@ -184,11 +183,7 @@ function validate() {
 
           changeValueInArray(ID);
         };
-
-
       }
-
-
     }
   }
 
@@ -234,7 +229,6 @@ function CheckUpdatedData(sameID) {
         document.getElementById('upid_error').innerHTML = '';
       }
     }
-    console.log(isvalid);
 
   } else {
     document.getElementById('upid_error').innerHTML = 'Contains Numeric Value Only';
