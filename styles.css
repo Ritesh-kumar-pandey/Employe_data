@@ -6,14 +6,14 @@ body{
   background-color: #f2f2f2;
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
+
   
 }
 
 h1 {
   
   text-align: center;
-  color: #333;
+  color: #030303;
   
 }
 
@@ -29,15 +29,15 @@ h1 {
 
 .label {
   color: #fffcfc;
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 10px;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .input {
 
-  color: #151618;
-  font-size: 12px;
+  
+  font-size: 14px;
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -134,7 +134,7 @@ table td {
 
 }
 img{
-  width: 40%;
+  width: 50px;
 }
 
 .update_form label,
@@ -153,11 +153,15 @@ img{
   width: 50%;
 }
 table button{
-  display: flex;
-  align-items: center;
+  margin-left: 40px;
   border: none;
   background: none;
 }
+
+#edit_employe{
+  margin-left: 20px;
+}
+
 
 table thead{
   background-color: rgb(6, 20, 100);

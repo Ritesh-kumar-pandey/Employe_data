@@ -65,7 +65,7 @@ function AddDataToTable(DataEmploye) {
       <td>${employe_name}</td>
       <td>${employe_age}</td>
       <td>${employe_gender}</td>
-      <td>${'<button id="edit_employe" onclick="return UpdateDetails()"><img src="edit.png"></button><button id=delete_employe><img src="delete.png"></button>'}</td>
+      <td class"button_align">${'<button id="edit_employe" onclick="return UpdateDetails()"><img src="edit.png"></button><button id=delete_employe><img src="delete.png"></button>'}</td>
     `;
     tableBody.appendChild(row);
   } else {
@@ -137,7 +137,7 @@ function validate() {
 
 
 
-  
+
   // to delete the data
   var i;
   var delBtn = document.querySelectorAll('#delete_employe');
@@ -180,6 +180,7 @@ function validate() {
           td[1].innerHTML = e_name.value;
           td[2].innerHTML = e_age.value;
           td[3].innerHTML = e_gender.value;
+          alert("Updation succesful");
 
           changeValueInArray(ID);
         };
@@ -198,6 +199,7 @@ function changeValueInArray(refid) {
       DataEmployeArray[i].name = e_name.value;
       DataEmployeArray[i].age = e_age;
       DataEmployeArray[i].gender = e_gender;
+      
 
     }
   }
