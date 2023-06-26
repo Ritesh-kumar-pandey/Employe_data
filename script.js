@@ -23,7 +23,7 @@ var DataEmployeArray = [];
 //Close the Update Form page
 function CancelPage() {
   event.preventDefault();
-   document.getElementById('update_form').style.display = 'none';
+  document.getElementById('update_form').style.display = 'none';
   document.getElementById('upid_error').innerHTML = '';
   document.getElementById('upname_error').innerHTML = '';
   document.getElementById('upage_error').innerHTML = '';
@@ -51,11 +51,11 @@ function AddDataToTable(DataEmploye) {
   //Verifying the ID
   if (VerifyId(DataEmploye)) {
     DataEmployeArray.push(DataEmploye);
-    
-    document.getElementById('emp_id').value='';
-    document.getElementById('employe_name').value='';
-    document.getElementById('employe_age').value='';
-    document.getElementById('employe_gender').value='';
+
+    document.getElementById('emp_id').value = '';
+    document.getElementById('employe_name').value = '';
+    document.getElementById('employe_age').value = '';
+    document.getElementById('employe_gender').value = '';
 
 
     const tableBody = document.querySelector('#datatable');
