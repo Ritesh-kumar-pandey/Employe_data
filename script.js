@@ -197,7 +197,7 @@ function validate() {
 function changeValueInArray(refid) {
   var i;
   for (i = 0; i < DataEmployeArray.length - 1; i++) {
-    console.log(DataEmployeArray[i].ID)
+    
     if (refid == DataEmployeArray[i].ID) {
       DataEmployeArray[i].ID = e_id.value;
       DataEmployeArray[i].name = e_name.value;
