@@ -1,3 +1,4 @@
+//global Varibales
 var emp_id = document.getElementById('emp_id');
 var emp_name = document.getElementById('employe_name');
 var emp_age = document.getElementById('employe_age');
@@ -22,8 +23,7 @@ var DataEmployeArray = [];
 //Close the Update Form page
 function CancelPage() {
   event.preventDefault();
-  // document.getElementById('body').style.display='block'
-  document.getElementById('update_form').style.display = 'none';
+   document.getElementById('update_form').style.display = 'none';
   document.getElementById('upid_error').innerHTML = '';
   document.getElementById('upname_error').innerHTML = '';
   document.getElementById('upage_error').innerHTML = '';
@@ -42,7 +42,6 @@ function VerifyId(DataEmploye) {
     }
   }
   return isvalid
-
 }
 
 
@@ -52,7 +51,11 @@ function AddDataToTable(DataEmploye) {
   //Verifying the ID
   if (VerifyId(DataEmploye)) {
     DataEmployeArray.push(DataEmploye);
-
+    
+    document.getElementById('emp_id').value='';
+    document.getElementById('employe_name').value='';
+    document.getElementById('employe_age').value='';
+    document.getElementById('employe_gender').value='';
 
 
     const tableBody = document.querySelector('#datatable');
@@ -109,6 +112,8 @@ function validate() {
 
   }
 
+
+
   // validate age
 
   if (num.test(employe_age) && employe_age >= 18 && employe_age <= 60) {
@@ -130,6 +135,8 @@ function validate() {
     AddDataToTable(DataEmploye);
   }
 
+
+
   // to delete the data
   var i;
   var delBtn = document.querySelectorAll('#delete_employe');
@@ -148,7 +155,7 @@ function validate() {
 
   for (i = 0; i < edtBtn.length; i++) {
     edtBtn[i].onclick = function () {
-    
+
       document.getElementById("update_form").style.display = 'block';
       var tr = this.parentElement.parentElement;
       var td = tr.getElementsByTagName('TD');
