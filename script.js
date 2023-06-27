@@ -95,7 +95,7 @@ function validate() {
 
   var isvalid = true
   // validate name
-  if (/^[A-z]+$/.test(employe_name) == false) {
+  if (/^[A-z ]+$/.test(employe_name) == false) {
     document.getElementById('name_error').innerHTML = 'Contains Alphabet only';
     isvalid = false
   } else {
@@ -210,7 +210,7 @@ function changeValueInArray(refid) {
 function CheckUpdatedData(sameID) {
   let isvalid = true
 
-  if (!/^[A-z]+$/.test(e_name.value)) {
+  if (!/^[A-z ]+$/.test(e_name.value)) {
     document.getElementById('upname_error').innerHTML = 'Contains Alphabet Only';
     isvalid = false
   } else {
