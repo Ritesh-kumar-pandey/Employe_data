@@ -33,7 +33,7 @@ function CancelPage() {
 
 
 // Verifying The employe id exist or not
-function VerifyId(DataEmploye) {
+function VerifyId() {
   let isvalid = true
   var i = 0;
   for (i = 0; i <= DataEmployeArray.length - 1; i++) {
